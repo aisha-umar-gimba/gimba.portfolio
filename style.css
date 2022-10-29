@@ -1,0 +1,592 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+#home{
+   height: 100vh;
+   width: 100%;
+   background-color: rgb(24, 23, 23);
+}
+header{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    left: 20px;
+    z-index: 2;
+    box-shadow: 0 0 30px rgb(red, green, blue / 8%);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+.logo{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+}
+span{
+    color: royalblue;
+}
+nav ul{
+    flex: 1;
+    text-align: center;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: royalblue;
+    transition: .4s;
+}
+nav .btn{
+    background-color: royalblue;
+    color: white;
+    text-decoration: none;
+    border: 2px solid royalblue;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+    margin-left: 50px;
+    font-size: 14px;
+}
+nav .btn:hover{
+    background: transparent;
+    transform: scale(1.2);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translateY(-50%);
+}
+.content h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 35px;
+}
+.content h3{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.content h4{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.image{
+    width: 45%;
+    height: 172%;
+    position: absolute;
+    bottom: 0;
+    top: 5;
+    right: 0px;
+    left: 500px;
+}
+.avatar{
+    display: none;
+}
+.social a{
+    width: 35px;
+    height: 30px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    font-size: 25px;
+    color: royalblue;
+    border-radius: 50%;
+    margin-right: 22px;
+    margin-bottom: 30px;
+}
+.social a:hover{
+    background: transparent;
+    transform: scale(1.2)
+}
+#about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: rgb(37, 37, 37);
+}
+#about img{
+    height: auto;
+    width: 390px;
+    border-radius: 25px;
+}
+.about-text{
+    width: 650px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text p{
+    line-height: 1.4;
+    margin-right: 20px;
+}
+#check{
+    display: none;
+}
+.aboutinfo{
+    display: none;
+    transition: 0.5s linear;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    margin-top: 0px;
+}
+label{
+    display: inline-block;
+    margin-top: 7px;
+    margin-bottom: 45px;
+    color: royalblue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+#check:checked ~ .aboutinfo{
+    display: block;
+}
+#check:checked ~ label{
+    visibility: hidden;
+}
+#check:checked ~ label::after{
+    content:'Show Less';
+    display: block;
+    visibility: visible;
+}
+.about-text h2{
+    color: white;
+    font-size: 70px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-family: Georgia, sans-serif;
+}
+.about-text p{
+    color: lightblue;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 16px;
+}
+button{
+    background-color: royalblue;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid royalblue;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* ------------sevices-------- */
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgb(48, 52, 53);
+    background-color: rgb(37, 37, 37);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container h5{
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-family: Georgia, sans-serif;
+    border: 0px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: gray;
+    padding: 40px;
+       font-size: 13px;
+    font-weight: 200;
+    border-radius: 10px;
+    transition: 0.5s, transform 0.5s;
+}
+.services-list div h2{
+    color: blue;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.services-list div:hover{
+    background: royalblue;
+    transform: translateY(10px);
+}
+.services-list div i{
+    color: royalblue;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div p{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container h2{
+    font-size: 2.4rem;
+    color: black;
+    font-weight: 600;
+}
+/*------------interview---------*/
+#interview{
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#interview h6{
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: Georgia, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.interviews-list{
+    display: flex;
+    margin: right 50%;
+}
+.interviews-list h3{
+    font-size: large;
+    font-weight: bold;
+}
+.interviews-list div{
+    background: rgb(48, 52, 53);
+    padding: 30px;
+    font-size: 10px;
+    font-weight: 300;
+    border-radius: 30px;
+    transition: 0.5s, transform 0.5s;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    min-height: 40px;
+}
+.interviews-list div img{
+    border-radius: 40px;
+}
+.interviews-list div p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.interviews-list div:hover{
+    background: royalblue;
+    transform: translateY(10px);
+}
+
+/*----------------Contact Me----------*/
+.contactme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+#contact h2{
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-top: 120px;
+    font-family: Georgia, sans-serif;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    font-size: 14px;
+    background: white;
+}
+form button{
+    padding: 12px;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 120px;
+    margin: 15px auto;
+}
+form .btn{
+    display: none;
+}
+.copywrite{
+    background-color: gray;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.copywrite p{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+/*---------------css for small screens----------------*/
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 414px){
+    .image{
+        display: none;
+}
+.avatar{
+    display: flex;
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px royalblue;
+    border-style: double;
+    border-bottom: solid 2px royalblue;
+    margin-bottom: 20px;
+}
+.content{
+    margin-top: 100px;
+    font-size: 16px;
+    right: 20%;
+}
+.content{
+    top: 40%;
+}
+.content h1{
+    font-size: 23px;
+}
+.content h4{
+    font-size: 12px;
+}
+.content h3{
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.social a{
+    width: 18px;
+}
+nav .fa-solid{
+    display: block;
+    font-size: 25px;
+}
+nav ul{
+    background: royalblue;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+.logo{
+    font-size: 10px;
+    letter-spacing: 0px;
+    cursor: pointer;
+    margin-left: 0px;
+    font-family: impact'Arial Narrow Bold', sans-serif;
+    
+}
+nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    cursor: pointer;
+}
+#about img{
+    height: 0px;
+    width: 0px;
+    margin-right: 50px;
+}
+.about-text h2{
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.about-text p{
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    display: contents;
+}
+.about{
+    width: 100%;
+    padding: 18px 0px;
+    background-size: 30px;
+}
+.interviews-list{
+    display: grid;
+    margin-bottom: 60px;
+}
+.inter h6{
+    margin-bottom: 50px;
+    margin-top: 70px;
+}
+.container h5{
+    display: contents;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+nav .btn{
+    display: none;
+}
+form .btn{
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.copywrite p{
+    font-size: 10px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
