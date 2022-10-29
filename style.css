@@ -489,8 +489,6 @@ nav ul .fa-solid{
     letter-spacing: 1px;
     line-height: 25px;
     font-size: 17px;
-    margin-left: auto;
-    margin-right: 20px;
     align-items: center;
     justify-content: center;
     display: contents;
@@ -498,7 +496,7 @@ nav ul .fa-solid{
 }
 .about{
     width: 100%;
-    padding: 18px 0px;
+    padding: 15px 0px;
     background-size: 30px;
 }
 .interviews-list{
@@ -526,68 +524,7 @@ form .btn{
 .copywrite p{
     font-size: 10px;
 }
+button{
+    border-bottom: solid 2px gray;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
