@@ -423,11 +423,11 @@ nav .fa-solid{
 .content{
     top: 40%;
 }
-.content h4{
-    font-size: 12px;
-}
 .content h1{
     font-size: 23px;
+}
+.content h4{
+    font-size: 12px;
 }
 .content h3{
     font-size: 15px;
@@ -462,6 +462,7 @@ nav ul li{
     cursor: pointer;
     margin-left: 0px;
     font-family: impact'Arial Narrow Bold', sans-serif;
+    
 }
 nav ul .fa-solid{
     position: absolute;
@@ -503,7 +504,7 @@ nav ul .fa-solid{
     margin-top: 70px;
 }
 .container h5{
-    display: flex;
+    display: contents;
     align-items: center;
     justify-content: center;
     padding: 0px;
@@ -520,67 +521,6 @@ form .btn{
     font-size: 10px;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
