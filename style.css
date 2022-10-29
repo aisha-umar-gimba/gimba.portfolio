@@ -104,7 +104,7 @@ nav .btn:hover{
     right: 0px;
     left: 500px;
 }
-.img{
+.avatar{
     display: none;
 }
 .social a{
@@ -409,11 +409,16 @@ nav .fa-solid{
     .image{
         display: none;
 }
-#home{
-    background-image: url(./image/gimbasule.jpg_1-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-position: 153px;
+.avatar{
+    display: flex;
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px royalblue;
+    border-style: double;
+    border-bottom: solid 2px royalblue;
+    margin-bottom: 20px;
 }
 .content{
     margin-top: 100px;
@@ -521,6 +526,4 @@ form .btn{
     font-size: 10px;
 }
 }
-
-
 
