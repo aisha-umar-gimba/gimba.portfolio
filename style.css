@@ -115,13 +115,13 @@ nav .btn:hover{
     justify-content: center;
     background: transparent;
     font-size: 25px;
-    color: white;
+    color: royalblue;
     border-radius: 50%;
     margin-right: 22px;
     margin-bottom: 30px;
 }
 .social a:hover{
-    background: royalblue;
+    background: transparent;
     transform: scale(1.2)
 }
 #about{
@@ -252,6 +252,7 @@ button:hover{
     transition: 0.5s, transform 0.5s;
 }
 .services-list div h2{
+    color: blue;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', sans-serif;
     margin-bottom: 15px;
@@ -262,10 +263,12 @@ button:hover{
     transform: translateY(10px);
 }
 .services-list div i{
+    color: royalblue;
     font-size: 50px;
     margin-bottom: 30px;
 }
 .services-list div p{
+    font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
@@ -432,7 +435,7 @@ nav .fa-solid{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .social a{
-    width: 18px;
+    width: 20px;
 }
 nav .fa-solid{
     display: block;
