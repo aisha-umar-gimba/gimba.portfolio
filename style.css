@@ -145,7 +145,7 @@ nav .btn:hover{
     align-items: center;
     justify-content: space-around;
 }
-.about-text p{
+.info p{
     line-height: 1.4;
     margin-right: 20px;
 }
@@ -189,7 +189,7 @@ label{
     margin-top: 0px;
     font-family: Georgia, sans-serif;
 }
-.about-text p{
+.info p{
     color: lightblue;
     letter-spacing: 1px;
     line-height: 28px;
@@ -485,7 +485,7 @@ nav ul .fa-solid{
     margin-bottom: 50px;
     margin-top: 10px;
 }
-.about-text p{
+.info p{
     letter-spacing: 1px;
     line-height: 25px;
     font-size: 17px;
@@ -494,6 +494,7 @@ nav ul .fa-solid{
     align-items: center;
     justify-content: center;
     display: contents;
+    margin: 3%;
 }
 .about{
     width: 100%;
