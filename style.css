@@ -405,7 +405,7 @@ form .btn{
 nav .fa-solid{
     display: none;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 414px){
     .image{
         display: none;
 }
@@ -413,7 +413,7 @@ nav .fa-solid{
     background-image: url(./image/gimbasule.jpg_1-removebg-preview.png);
     background-repeat: no-repeat;
     background-position: right;
-    background-position: 120px;
+    background-position: 153px;
 }
 .content{
     margin-top: 100px;
