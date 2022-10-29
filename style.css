@@ -410,20 +410,29 @@ nav .fa-solid{
     background-image: url(./image/gimbasule.jpg_1-removebg-preview.png);
     background-repeat: no-repeat;
     background-position: right;
-    background-position: 130px;
+    background-position: 120px;
 }
 .content{
     margin-top: 100px;
     font-size: 16px;
     right: 20%;
 }
+.content{
+    top: 40%;
+}
+.content h4{
+    font-size: 12px;
+}
 .content h1{
     font-size: 23px;
 }
 .content h3{
-    font-size: 21px;
+    font-size: 17px;
     font-weight: lighter;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.social a{
+    width: 20px;
 }
 nav .fa-solid{
     display: block;
@@ -449,6 +458,7 @@ nav ul li{
     letter-spacing: 0px;
     cursor: pointer;
     margin-left: 0px;
+    font-family: impact'Arial Narrow Bold', sans-serif;
 }
 nav ul .fa-solid{
     position: absolute;
@@ -464,7 +474,7 @@ nav ul .fa-solid{
 .about-text h2{
     font-size: 50px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .about-text p{
     letter-spacing: 1px;
@@ -474,6 +484,7 @@ nav ul .fa-solid{
     margin-right: 20px;
     align-items: center;
     justify-content: center;
+    display: contents;
 }
 .about{
     width: 100%;
@@ -501,6 +512,9 @@ form .btn{
     display: flex;
     font-size: 15px;
     margin-bottom: 20px;
+}
+.copywrite p{
+    font-size: 10px;
 }
 }
 
