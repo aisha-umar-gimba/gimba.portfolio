@@ -426,8 +426,8 @@ nav .fa-solid{
 .avatar{
     display: flex;
     vertical-align: middle;
-    width: 250px;
-    height: 250px;
+    width: 190px;
+    height: 200px;
     border-radius: 10px;
     border: 1px royalblue;
     border-style: double;
@@ -508,7 +508,7 @@ nav .fa-solid{
 .info p{
     letter-spacing: 1px;
     line-height: 25px;
-    font-size: 17px;
+    font-size: 16px;
     align-items: center;
     justify-content: center;
     display: contents;
