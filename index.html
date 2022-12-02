@@ -18,7 +18,7 @@
     <div class="container">
         <header>
         <nav>
-            <h2 class="logo">Portfo<span>lio.</span></h2>
+            <h2 class="logo">GIM<span>BA.</span></h2>
             <ul id="sidemenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -28,7 +28,7 @@
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            <button class="btn"><a href="https://bit.ly/3siaNch">Download CV</a></button>
+            <button class="buttoncv"><a href="https://bit.ly/3siaNch">Download CV</a></button>
 
         </nav>
         </header>
@@ -64,20 +64,22 @@
             <div class="about-text">
                 <input type="checkbox" id="check">
                 <h2>About Me</h2>
-                <div class="info">
-                <p>I am a consultant, lawyer and columnist from Yobe State, practising in Abuja. I specialize in legislative and public policy advocacy, negotiation, and disaster management across the West and Central African region.
+                <p>I am a Consultant, Lawyer and Columnist from Yobe State, practising in Abuja. I specialize in legislative and public policy advocacy, negotiation, and disaster management across the West and Central African region.
+                    In 2022, I founded the Initiative for Legislative Engagement Advocacy Research and Negotiation (iLEARN) LTD/GTE. iLEARN is a nonprofit legislative and policy advocacy organization based in Abuja.
                     Out of passion, I advocate for cultural heritage preservation and resuscitation of literature and arts in the north. In 2015, I cofounded the Yobe Literary Society (YLS) to turn passion into reality.
-                    I encourage dialogue as a way of formulating policies and solving societal ills. I curated the first book and arts festival in the northeast – the Yobe Peace and Arts Festival (YOPAFEST) in 2021...</p>
-                    <div class="aboutinfo">
-                        <p>the same year, I published his first book "The Howls on the Highway to Hell" and co-authored the Society’s first book "iWrite: an Essential Guide to Writing in the 21st Century". I am the curator of TEDxBazeUniversity.
-                        In 2022, I edited the Society’s second book “Journey to a Future-Past: Yobe through the Times”, written by Yahuza Rabi’u Garba. 
-                        I have worked with Hexalix Properties Ltd as a Legal Officer, the Civil Society Legislative Advocacy Centre (CISLAC, which serves as the National Chapter of Transparency International) and Médecins Sans Frontières West and Central Africa as Ambassador Assistant.
-                            I have worked on various committees and consulted for numerous organizations. In 2021, I worked with the African Commission on Human and the National Human Rights Commission as part of a strategic consultation to put a report on declarations of state of emergency and disaster laws in Africa to the African Union. I worked with the House of Representatives Adhoc Committee on Real Estate to check the excesses of developers in the Federal Capital Territory and helped formulate policies to that effect. I also served on the Yobe Stare Committee on the Yobe Education Trust Fund (YETFund) and registered it with the Corporate Affairs Commission. I was a guest at the Kaduna Book and Arts Festival in 2022.
-                            I love to play chess and analyze football matches in my free time.</p>
-                    </div>
+                    I encourage dialogue as a way of formulating policies and solving societal ills. I curated the first book and arts festival in the northeast – the Yobe Peace and Arts Festival (YOPAFEST) in 2021....</p>
+                <div class="info">
+                <p>In the same year, I published his first book "The Howls on the Highway to Hell" and co-authored the Society’s first book "iWrite: an Essential Guide to Writing in the 21st Century". I am the curator of TEDxBazeUniversity.
+                    In 2022, I edited the Society’s second book “Journey to a Future-Past: Yobe through the Times”, written by Yahuza Rabi’u Garba.
+                    I have worked with Hexalix Properties Ltd as a Legal Officer, the Civil Society Legislative Advocacy Centre (CISLAC, which serves as the National Chapter of Transparency International) and Médecins Sans Frontières West and Central Africa as Ambassador Assistant.
+                    I have worked on various committees and consulted for numerous organizations. In 2021, I worked with the African Commission on Human and the National Human Rights Commission as part of a strategic consultation to put a report on declarations of state of emergency and disaster laws in Africa to the African Union. I worked with the House of Representatives Adhoc Committee on Real Estate to check the excesses of developers in the Federal Capital Territory and helped formulate policies to that effect. I also served on the Yobe Stare Committee on the Yobe Education Trust Fund (YETFund) and registered it with the Corporate Affairs Commission. I was a guest at the Kaduna Book and Arts Festival in 2022.
+                    I love to play chess and analyze football matches in my free time.</p>
                 </div>
-                    <label for="check">Read More</label><br>
-                    <a href="https://amzn.to/3fHZHua"><button type="button">Buy My Book</button></a>
+                <label for="check">Read more</label>
+                <div class="book">
+                    <i class="fa-solid fa-book"></i>
+                        <a href="https://amzn.to/3fHZHua"><button type="button">Buy My Book</button></a>
+                </div>
             </div>
         </div>
     </section>
@@ -140,42 +142,29 @@
                 `
                 <!--============Contact Me===========-->
                 <section id="contact">
-                    <h2>Contact Me</h2>
-                </div>
-                <div class="contactme">
-                    <form onsubmit="sendEmail(); reset(); return false;">
-                        <input type="text" name="name" id="name" placeholder="Your Name" required>
-                        <input type="email" name="email" id="email" placeholder="Email id" required>
-                        <input type="text" name="phone" id="phone" placeholder="Phone No." required>
-                        <textarea name="message" id="message" rows="5" placeholder="Write your message"></textarea>
-                        <button type="submit">Send</button>
-                        <button class="btn"><a href="https://bit.ly/3siaNch">Download CV</a></button>
-                    </form>
+                    <div class="contact-form">
+                        <h1>Contact Me</h1>
+                        <h3>I am available for freelance work.</h3> 
+                        <p>Connect with me via phone: 08100000888 or email: suleimangimba00@gmail.com</p>
+                        <form action="https://formsubmit.co/suleimangimba00@gmail.com" method="POST">
+                            <input type="name" placeholder="Your Name" required>
+                            <input type="email" name="email" id="" placeholder="E-mail" required>
+                            <input type="subject" placeholder="Write a Subject" required>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                            <input type="submit" name="" value="Submit" class="btn">
+                            <input type="hidden" name="_next" value="https://gimba.com.ng/thanks.html">
+                            <button class="button"><a href="https://bit.ly/3siaNch">Download CV</a></button>
+                        </form>
+                    </div>
                 </section>
+                </div>
+                
+
                 <div class="copywrite">
                     <p>Copywrite © Gimba Suleiman Hassan Esq.<br> Made by Aisha Umar Gimba <i class="fa-solid fa-code"></i></p>
                 </div>
-                <script src="https://smtpjs.com/v3/smtp.js"></script>
-                <script>
-                    function sendEmail(){
-                        Email.send({
-                            Host : "smtp.gmail.com",
-                            Username : "gimba.portfolio@gmail.com",
-                            Password : "wyrwaw-sovda4-jixkUp",
-                            To : 'gimba.portfolio@gmail.com',
-                            From : document.getElementById("email").value,
-                            Subject : "New Contact Form Enquiry",
-                            Body : "Name: " + document.getElementById("name").value
-                                + "<br> Email: " + document.getElementById("email").value
-                                + "<br> Phone No.: " + document.getElementById("phone").value
-                                + "<br> Message: " + document.getElementById("message").value
-
-                        }).then(
-                        message => alert("Message Sent Successfully")
-                        );
-                    }
-                </script>
-
+                
+             
    <script>
          var sidemenu = document.getElementById("sidemenu");
          function openmenu(){
